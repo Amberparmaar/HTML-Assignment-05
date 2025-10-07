@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo Game</title>
+  </head>
+  <body>
+    <center>
+      <h1>
+        Ludo Game<img
+          width="80"
+          height="60"
+          src="./images/dice.jpeg"
+          alt="dice-image"
+          title="dice"
+          align="middle"
+        />
+      </h1>
+      <table border="1" cellpadding="25">
+        <!-- row 1 -->
+        <tr>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td
+            bgcolor="green"
+            style="color: white; padding: 0; transform: rotate(180deg)"
+          >
+            <center>Start</center>
+          </td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td style="padding: 0">
+            <center>
+              <img
+                width="20"
+                height="18"
+                src="./images/redstar.png"
+                alt="red star"
+                title="red-star"
+              />
+            </center>
+          </td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+        </tr>
+        <!-- row 4 -->
+        <tr>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+        </tr>
+        <!-- row 5 -->
+        <tr>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+        </tr>
+        <!-- row 6 -->
+        <tr>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+          <td bgcolor="green"></td>
+        </tr>
+        <!-- row 7-->
+        <tr>
+          <td></td>
+          <td
+            bgcolor="red"
+            style="color: white; writing-mode: sideways-rl; padding: 0"
+          >
+            <center>Start</center>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td style="padding: 0">
+            <center>
+              <img
+                width="30"
+                height="30"
+                src="./images/search.png"
+                alt="search-icon"
+                title="search"
+              />
+            </center>
+          </td>
+          <td bgcolor="black"></td>
+          <td style="padding: 0"><center>3</center></td>
+          <td bgcolor="black"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td style="padding: 0">
+            <center>
+              <img
+                width="20"
+                height="18"
+                src="./images/greenstar.png"
+                alt="green-star"
+                title="star"
+              />
+            </center>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- row 8 -->
+        <tr>
+          <td></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td bgcolor="red"></td>
+          <td style="padding: 0"><center>4</center></td>
+          <td bgcolor="gray" style="padding: 0"><center>WIN</center></td>
+          <td style="padding: 0"><center>2</center></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td></td>
+        </tr>
+        <!-- row 9 -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td style="padding: 0">
+            <center>
+              <img
+                width="20"
+                height="18"
+                src="./images/bluestar.png"
+                alt="blue-star"
+                title="star"
+              />
+            </center>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td bgcolor="black"></td>
+          <td style="padding: 0"><center>1</center></td>
+          <td bgcolor="black"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td
+            bgcolor="yellow"
+            style="color: white; writing-mode: sideways-lr; padding: 0"
+          >
+            <center>Start</center>
+          </td>
+          <td></td>
+        </tr>
+        <!-- row 10 -->
+        <tr>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+        </tr>
+        <!-- row 11 -->
+        <tr>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+        </tr>
+        <!-- row 12 -->
+        <tr>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+        </tr>
+        <!-- row 13 -->
+        <tr>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td style="padding: 0">
+            <center>
+              <img
+                width="25"
+                height="22"
+                src="./images/yellow.jpeg"
+                alt="yellow-star"
+                title="star"
+              />
+            </center>
+          </td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+        </tr>
+        <!-- row 14 -->
+        <tr>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue" style="color: white; padding: 0">
+            <center>Start</center>
+          </td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+        </tr>
+        <!-- row 15 -->
+        <tr>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="lightblue"></td>
+          <td></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+          <td bgcolor="yellow"></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
